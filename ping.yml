@@ -1,6 +1,0 @@
----
-- name: ping mojule
-  hosts: all
-  tasks:
-  - name: ping疎通確認
-    ping:
