@@ -1,0 +1,10 @@
+---
+- name: yum mojule
+  hosts: web
+  gather_facts: no
+  become: true
+  tasks:
+  - name: httpdインストール
+    yum:
+      name: httpd
+      state: present
