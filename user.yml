@@ -1,0 +1,13 @@
+---
+- name: user mojule
+  hosts: all
+  gather_facts: no
+  become: true
+  tasks:
+  - name: user作成
+    user:
+      name: user1
+      state: present
+      comment: labuser
+      group: wheel
+      shell: /bin/sh
