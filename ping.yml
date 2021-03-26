@@ -1,0 +1,7 @@
+---
+- name: ping mojule
+  hosts: all
+  gather_facts: no
+  tasks:
+  - name: ping疎通確認
+    ping:
