@@ -5,3 +5,4 @@
   tasks:
   - name: ping疎通確認
     ping:
+    
